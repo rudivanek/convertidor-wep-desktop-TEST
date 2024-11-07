@@ -1,0 +1,21 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.sharpen.webpconverter
+productName: Sharpen WebP Converter
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+      - package.json
+win:
+  target: nsis
+  icon: public/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  installerIcon: public/icon.ico
+  uninstallerIcon: public/icon.ico
+  shortcutName: Sharpen WebP Converter
+electronVersion: 29.4.6
